@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="author" content="Luan Henrique">
+    <meta name="keywords" content="valorant, ranks, competitivo, radiante, imortal, elo">
+    <meta name="description" content="Sistema de ranks (elos) competitivos do jogo VALORANT.">
+    <meta property="og:title" content="Ranks | VALORANT">
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+    <title>Ranks | VALORANT</title>
+    <link rel="prev" href="modos-de-jogo.html">
+    <link rel="next" href="agentes.html">
+</head>
+<body id="topo">
+
+    <header>
+        <div style="text-align: center;">
+
+    <img src="../img/logo-valorant.png"
+         alt="Logo do jogo Valorant"
+         width="510"
+         height="165" />
+
+    <h1>Ranks</h1>
+
+    <nav>
+        <p>
+            <a href="index.html">Inicio</a> |
+            <a href="historia.html">Historia</a> |
+            <a href="gameplay.html">Gameplay</a> |
+            <a href="agentes.html">Agentes</a> |
+            <a href="agente-jett.html">Jett (Detalhe)</a> |
+            <a href="mapas.html">Mapas</a> |
+            <a href="armas-economia.html">Armas &amp; Economia</a> |
+            <a href="modos-de-jogo.html">Modos de Jogo</a> |
+            <a href="ranks.html">Ranks</a> |
+            <a href="trilha-sonora.html">Trilha Sonora</a> |
+            <a href="videos.html">Videos</a> |
+            <a href="curiosidades.html">Curiosidades</a> |
+            <a href="cadastro-torneio.html">Cadastro</a> |
+            <a href="sobre-projeto.html">Sobre o Projeto</a>
+        </p>
+    </nav>
+
+</div>
+    </header>
+
+    <hr />
+
+    <main>
+        <section>
+            <h2>Bem-vindo(a) ao projeto</h2>
+            <p>
+                Este site foi desenvolvido como <b>projeto academico</b> da disciplina de
+                <i>Desenvolvimento Front-end para Web</i>, com o objetivo de aplicar, na pratica,
+                todo o conteudo de <mark>HTML basico e HTML avancado</mark> estudado em sala.
+                O tema escolhido foi o jogo <b>VALORANT</b>, desenvolvido pela
+                <abbr title="Riot Games, Inc.">Riot Games</abbr>.
+            </p>
+            <p>
+                Aqui voce vai encontrar a historia do jogo, explicacoes sobre a gameplay,
+                lista de agentes, mapas, armas, modos de jogo, sistema de ranks, trilha sonora,
+                videos e ate um formulario de inscricao para um torneio fictício.
+            </p>
+        </section>
+
+        <hr />
+        <h1>Sistema de Ranks</h1>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <p>
+                No modo competitivo, o desempenho do jogador e representado por um <b>rank</b> (elo),
+                que sobe ou desce de acordo com as vitorias, derrotas e desempenho individual em cada
+                partida.
+            </p>
+
+            <table border="1">
+                <caption>Ranks do VALORANT, do mais baixo ao mais alto</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Rank</th>
+                        <th scope="col">Divisoes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><th scope="row">Ferro</th><td>I a III</td></tr>
+                    <tr><td>2</td><th scope="row">Bronze</th><td>I a III</td></tr>
+                    <tr><td>3</td><th scope="row">Prata</th><td>I a III</td></tr>
+                    <tr><td>4</td><th scope="row">Ouro</th><td>I a III</td></tr>
+                    <tr><td>5</td><th scope="row">Platina</th><td>I a III</td></tr>
+                    <tr><td>6</td><th scope="row">Diamante</th><td>I a III</td></tr>
+                    <tr><td>7</td><th scope="row">Ascendente</th><td>I a III</td></tr>
+                    <tr><td>8</td><th scope="row">Imortal</th><td>I a III</td></tr>
+                    <tr><td>9</td><th scope="row"><mark>Radiante</mark></th><td>Unico (top da regiao)</td></tr>
+                </tbody>
+            </table>
+
+            <p>
+                O <b>Radiante</b> e reservado apenas aos jogadores mais bem colocados do ranking da
+                regiao, sendo o topo absoluto do jogo competitivo.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Exemplo de progresso (RR)</h2>
+            <p>
+                O progresso dentro de um rank e medido pela <abbr title="Rank Rating">RR</abbr>, uma
+                pontuacao de 0 a 100 que aumenta com vitorias e boas atuacoes, e diminui com derrotas.
+            </p>
+
+            <p>Progresso no rank atual:<br>
+            <progress value="70" max="100"></progress> 70/100 RR</p>
+
+            <p>Nota de desempenho em uma partida (0 a 9, sendo 9 o melhor desempenho):<br>
+            <meter value="7" min="0" max="9" low="3" high="7" optimum="9"></meter> Nota 7</p>
+        </section>
+
+        <hr>
+
+        <aside>
+            <h2>Dica</h2>
+            <p>
+                Subir de rank exige mais do que apenas boa mira: comunicacao, entendimento de economia
+                e trabalho em equipe pesam bastante no resultado final de cada partida competitiva.
+                Veja tambem o <a href="glossario.html">glossario</a> para entender melhor os termos
+                usados pela comunidade competitiva.
+            </p>
+        </aside>
+    </main>
+
+    <nav aria-label="Paginacao">
+        <hr>
+        <p>
+            <a href="modos-de-jogo.html" rel="prev">&larr; Pagina anterior: Modos de Jogo</a>
+            &middot;
+            <a href="trilha-sonora.html" rel="next">Proxima pagina: Trilha Sonora &rarr;</a>
+        </p>
+    </nav>
+
+    <hr>
+
+    <footer>
+        <p>
+            <b>VALORANT &mdash; Projeto Academico</b><br>
+            Desenvolvido por <b>Luan Henrique</b> para a disciplina de Desenvolvimento Front-end para Web.
+        </p>
+        <p><i>VALORANT e marca registrada da Riot Games, Inc. Projeto sem fins lucrativos e apenas educacional.</i></p>
+        <p>&copy; 2026 &mdash; <a href="sobre-projeto.html">Sobre o projeto</a></p>
+    </footer>
+
+</body>
+</html>

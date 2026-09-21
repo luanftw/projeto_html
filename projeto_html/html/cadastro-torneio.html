@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta name="author" content="Luan Henrique" />
+    <meta name="keywords" content="valorant, cadastro, torneio, inscricao, formulario" />
+    <meta name="description" content="Formulario de inscricao para o torneio ficticio do projeto sobre VALORANT." />
+    <title>Cadastro para Torneio | VALORANT</title>
+</head>
+<body>
+
+    <header>
+        <div style="text-align: center;">
+
+    <img src="../img/icon_png.png"
+         alt="Logo do jogo Valorant"
+         width="210"
+         height="165" />
+
+    <h1>Cadastro</h1>
+
+<body style="background-color: black; color: white;"></body>
+
+    <nav>
+        <p>
+            <a href="index.html">Inicio</a> |
+            <a href="historia.html">Historia</a> |
+            <a href="gameplay.html">Gameplay</a> |
+            <a href="agentes.html">Agentes</a> |
+            <a href="agente-jett.html">Jett (Detalhe)</a> |
+            <a href="mapas.html">Mapas</a> |
+            <a href="armas-economia.html">Armas &amp; Economia</a> |
+            <a href="modos-de-jogo.html">Modos de Jogo</a> |
+            <a href="ranks.html">Ranks</a> |
+            <a href="trilha-sonora.html">Trilha Sonora</a> |
+            <a href="videos.html">Videos</a> |
+            <a href="curiosidades.html">Curiosidades</a> |
+            <a href="cadastro-torneio.html">Cadastro</a> |
+            <a href="sobre-projeto.html">Sobre o Projeto</a>
+        </p>
+    </nav>
+
+</div>
+
+    <hr />
+
+    <main>
+        <section>
+            <p>
+                Preencha o formulario abaixo para se inscrever no <b>torneio ficticio</b> deste projeto
+                academico. Campos marcados com <mark>*</mark> sao obrigatorios.
+            </p>
+
+            <form action="cadastrar_participante.php" method="post">
+
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+
+                    <p>
+                        <label>Nome completo: *<br />
+                        <input type="text" name="nome" placeholder="Digite seu nome completo" required /></label>
+                    </p>
+
+                    <p>
+                        <label>E-mail: *<br />
+                        <input type="email" name="email" placeholder="exemplo@email.com" required /></label>
+                    </p>
+
+                    <p>
+                        <label>Crie uma senha:<br />
+                        <input type="password" name="senha" size="15" /></label>
+                    </p>
+
+                    <p>
+                        <label>Data de nascimento:<br />
+                        <input type="date" name="nascimento" /></label>
+                    </p>
+
+                    <p>
+                        <label>Agente favorito:<br />
+                        <input type="text" name="agente-favorito" list="lista-agentes" placeholder="Digite ou escolha um agente" /></label>
+                        <datalist id="lista-agentes">
+                            <option value="Jett"></option>
+                            <option value="Phoenix"></option>
+                            <option value="Raze"></option>
+                            <option value="Sova"></option>
+                            <option value="Breach"></option>
+                            <option value="Viper"></option>
+                            <option value="Omen"></option>
+                            <option value="Sage"></option>
+                            <option value="Cypher"></option>
+                        </datalist>
+                    </p>
+                </fieldset>
+
+                <hr />
+
+                <fieldset>
+                    <legend>Preferencias de jogo</legend>
+
+                    <p>
+                        <label>Rank atual:<br />
+                        <select name="rank">
+                            <option value="ferro">Ferro</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="prata">Prata</option>
+                            <option value="ouro">Ouro</option>
+                            <option value="platina">Platina</option>
+                            <option value="diamante">Diamante</option>
+                            <option value="ascendente">Ascendente</option>
+                            <option value="imortal">Imortal</option>
+                            <option value="radiante">Radiante</option>
+                        </select></label>
+                    </p>
+
+                    <p>Papel (role) preferido:</p>
+                    <label>
+                        <input type="radio" name="papel" value="duelista" checked /> Duelista
+                    </label><br />
+                    <label>
+                        <input type="radio" name="papel" value="iniciador" /> Iniciador
+                    </label><br />
+                    <label>
+                        <input type="radio" name="papel" value="controlador" /> Controlador
+                    </label><br />
+                    <label>
+                        <input type="radio" name="papel" value="sentinela" /> Sentinela
+                    </label>
+
+                    <p>Modos de jogo que voce mais gosta (pode marcar mais de um):</p>
+                    <label>
+                        <input type="checkbox" name="modos" value="competitivo" /> Competitivo
+                    </label><br />
+                    <label>
+                        <input type="checkbox" name="modos" value="spike-rush" /> Spike Rush
+                    </label><br />
+                    <label>
+                        <input type="checkbox" name="modos" value="deathmatch" /> Deathmatch
+                    </label><br />
+                    <label>
+                        <input type="checkbox" name="modos" value="escalation" /> Escalation
+                    </label>
+
+                    <p>
+                        <label>Horas jogadas por semana (0 a 40):<br />
+                        <input type="range" name="horas" min="0" max="40" value="10" /></label>
+                    </p>
+
+                    <p>
+                        <label>Cor do seu time (para o uniforme fictício):<br />
+                        <input type="color" name="cor" value="#ff4655" /></label>
+                    </p>
+
+                    <p>
+                        <label>Envie um print do seu perfil/rank:<br />
+                        <input type="file" name="print-perfil" /></label>
+                    </p>
+                </fieldset>
+
+                <hr />
+
+                <fieldset>
+                    <legend>Sobre voce</legend>
+                    <p>
+                        <label>Conte um pouco sobre sua experiencia com o jogo:<br />
+                        <textarea name="comentarios" cols="40" rows="5"></textarea></label>
+                    </p>
+                </fieldset>
+
+                <hr />
+
+                <p>
+                    <input type="submit" name="enviar" value="Enviar inscricao" />
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+        <p>
+            <a href="curiosidades.html" rel="prev">&larr; Pagina anterior: Curiosidades</a>
+            &middot;
+            <a href="sobre-projeto.html" rel="next">Proxima pagina: Sobre o Projeto &rarr;</a>
+        </p>
+    </nav>
+ 
+    <hr>
+
+    <footer>
+        <p>
+            <b>VALORANT &mdash; Projeto Academico</b><br />
+            Desenvolvido por <b>Luan Henrique</b> para a disciplina de Desenvolvimento Front-end para Web.
+        </p>
+        <p><i>VALORANT e marca registrada da Riot Games, Inc. Projeto sem fins lucrativos e apenas educacional.</i></p>
+        <p>&copy; 2026 &mdash; <a href="sobre-projeto.html">Sobre o projeto</a></p>
+    </footer>
+
+</body>
+</html>
